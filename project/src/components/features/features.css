@@ -1,0 +1,95 @@
+.container-features{
+    margin: 0;
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.container-features h1{
+    margin-bottom: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+.container-features p {
+    margin: 0;
+    display: flex;
+    font-weight: 300;
+    width: 450px;
+    text-align: center;
+
+}
+
+.features {
+    align-items: center;
+    margin-top: 40px;
+    width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 20px;
+    
+}
+
+.features div{
+    margin: 4px; 
+    padding: 10px 10px;
+    border-radius: 10px;grid-auto-columns: 3;
+    
+}
+.features div h4{
+    margin: 0;
+    font-size: 1.5rem;
+    font-style: bold;
+    font-weight: 400;
+}
+
+.features div p{
+    width: 300px;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+/*
+
+#Grid ( estudando o video do Mayk Brito da rocketseat: watch?v=HN1UjzRSdBk&ab_channel=Rocketseat )
+
+-Grid : bidimensional
+-Flexbox : unidimensional
+
+>>container
+
+-dsplay: grid
+-grid-template-columns
+-grid-template-rows: vh vh vh
+-grid-gap
+    -grid-row-gap: px
+    -grid-columns-gap
+-grid-template-areas
+
+.. e mais 4 propiedades e alinhamento
+
+>>items
+
+-grid-columns
+    -grid-column-start 1
+    -grid-column-end 3 ( uma div ocupa a linha toda)
+-grid-row
+    -grid-row-start
+    -grid-row-end
+-grid-area
+
+... e mais 2 epropiedades de alinhamento
+
+
+
+
+
+
+
+
+
+
+*/

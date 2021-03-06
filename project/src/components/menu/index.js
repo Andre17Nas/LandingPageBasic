@@ -5,13 +5,15 @@ export default function Menu(){
     return(
         <div className="container-menu">
             <nav>
-            <span>André Nas</span>
-                <ul>
-                    <li>PRODUCT</li>
-                    <li>FEATURES</li>
-                    <li>REVIEWS</li>
-                    <li>CONTACT</li>
-                </ul>
+                <div>
+                    <span></span>
+                    <ul>
+                        <li>PRODUCT</li>
+                        <li>FEATURES</li>
+                        <li>REVIEWS</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </div>
             </nav>
         </div>
     );

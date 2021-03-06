@@ -9,20 +9,41 @@
 nav{
     margin: auto;
     width: 100%;
-    height: 50px;
+    height: 40px;
+    max-width: 980px;
 
 }
 
-nav span{
+nav div{
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+}
+
+/* textos 
+
+#fixos: 
+1px = 0.75pt
+16px = 12pt
+
+#fluidos:
+em = multiplicado pelo pai
+rem = multiplicado pelo root
+
+
+*/
+
+nav div span{
     margin: 40px;
     padding: 0;
 
-    font-family: Roboto Thin;
+    font-family: Roboto sans-serif lighter;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
 }
-.container-menu nav ul {
+.container-menu nav div ul {
+    margin: 0px;
     display: flex;
     font-family: Roboto Light;
     font-weight: 300;
@@ -32,7 +53,7 @@ nav span{
 }
 
 .container-menu nav ul li{
-    font-size: 24px;
+    font-size: 1rem;
     margin: 0 15px;
     padding: 3px 0;
     list-style: none;
@@ -43,3 +64,17 @@ nav span{
 .container-menu nav ul li:hover{
     border-bottom: solid #54A2EA;
 }
+
+/* media queries */
+@media (max-width: 980px){
+    h1{
+        font-size: 50%;
+    }
+}
+
+@media(max-width: 640px){
+    nav ul li{
+        display: none;
+    }
+}
+

@@ -10,7 +10,8 @@ nav{
     margin: auto;
     width: 100%;
     height: 40px;
-    max-width: 980px;
+    position: fixed;
+    background-color: #C4C4C4;
 
 }
 
@@ -50,16 +51,27 @@ nav div span{
     font-style: normal;
     color: #272727;
     float: right;
+    list-style: none;
+    text-decoration: none;
 }
+
+
 
 .container-menu nav ul li{
     font-size: 1rem;
     margin: 0 15px;
     padding: 3px 0;
     list-style: none;
+    text-decoration: none;
     cursor: pointer;
     justify-content: right;
 } 
+
+.a{
+    text-decoration: none;
+    list-style: none;
+    color: #272727;
+}
 
 .container-menu nav ul li:hover{
     border-bottom: solid #54A2EA;

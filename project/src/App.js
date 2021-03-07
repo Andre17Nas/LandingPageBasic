@@ -4,6 +4,7 @@ import Routes from  './routes'
 import Menu from './components/menu'
 import Product from './components/product'
 import Features from './components/features'
+import Reviewss from './components/reviewss'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes/> 
       <Product/>
       <Features/>
+      <Reviewss/>
     </>
   );
 }

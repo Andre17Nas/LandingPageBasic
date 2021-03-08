@@ -1,25 +1,23 @@
 import React from 'react'
 import "./menu.css"
-import { HashLink } from 'react-router-hash-link'
-import { BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-scroll'
 
 
 export default function Menu(){
+
     return(
-        <BrowserRouter>
-            <div className="container-menu">
+        <div className="container-menu">
             <nav>
                 <div>
                     <span></span>
                     <ul>
-                            <li><HashLink smooth to="#section-product" className="a">PRODUCT</HashLink></li>
-                            <li><HashLink smooth to="#section-feature" className="a">FEATURES</HashLink></li>
-                            <li><HashLink smooth to="#section-reviews" className="a">REVIEWS</HashLink></li>
-                            <li><HashLink smooth to="#section-contact" className="a">CONTACT</HashLink></li>
+                            <li><Link smooth={true} to="section-product" className="a">PRODUCT</Link></li>
+                            <li><Link smooth={true} to="section-feature" className="a">FEATURES</Link></li>
+                            <li><Link smooth={true} to="section-reviews" className="a">REVIEWS</Link></li>
+                            <li><Link smooth={true} to="section-contact" className="a">CONTACT</Link></li>
                     </ul>
                 </div>
             </nav>
         </div>
-        </BrowserRouter>
     );
 }

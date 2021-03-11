@@ -1,6 +1,5 @@
 import './fotter.css'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
-import { BuyButton } from '../styled_components/global'
 
 export default function Footer(){
     return(
@@ -21,9 +20,9 @@ export default function Footer(){
         
             <footer>
                 <div className="social-links">
-                    <FaFacebook size={60} className="social"></FaFacebook>
-                    <FaTwitter size={60} className="social"></FaTwitter>
-                    <FaInstagram size={60} className="social"></FaInstagram>
+                    <a href="https://www.facebook.com/"><FaFacebook size={60} className="social"/></a>
+                    <a href="https://www.twitter.com.br/"><FaTwitter size={60} className="social"/></a>
+                    <a href="https://www.instagram.com/"><FaInstagram size={60} className="social"/></a>
                 </div>
                 <tr></tr>
                 <p> Copyright &copy; 2021 - André Nas. Todos os Direitos Reservados</p>

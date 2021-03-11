@@ -14,4 +14,10 @@ export const BuyButton = styled.button`
     border:none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+    &:hover{
+        background-color: #FFF;
+        border: 2px solid #54A2EA;
+        color: #C4C4C4;
+    }
+
 `;

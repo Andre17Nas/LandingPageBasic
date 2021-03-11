@@ -1,27 +1,19 @@
 .container-menu{
     margin: 0 auto;
     padding: 0;
-    display: flex;
-    flex-direction: row;
     background-color: #C4C4C4;
-    
-    
 }
 
 nav{
-    margin: auto;
+    margin-right: 60px;
     width: 100%;
-    height: 40px;
     position: fixed;
     z-index: 100;
-    background-color: #C4C4C4;
-
 }
 
 nav div{
     margin: 0;
     padding: 0;
-    display: flexbox;
 }
 
 /* textos 
@@ -60,8 +52,8 @@ nav div span{
 
 
 
-.container-menu nav ul li{
-    font-size: 1rem;
+.container-menu nav div ul li{
+    font-size: 1.5rem;
     margin: 0 15px;
     padding: 3px 0;
     list-style: none;
@@ -76,20 +68,64 @@ nav div span{
     color: #272727;
 }
 
-.container-menu nav ul li:hover{
+.container-menu nav div ul li:hover{
     border-bottom: solid #54A2EA;
 }
 
-/* media queries */
-@media (max-width: 980px){
-    h1{
-        font-size: 50%;
-    }
+.container-menu nav div ul li:active{
+    border-bottom: 2px solid #54A2EA;
 }
 
-@media(max-width: 640px){
-    nav ul li{
-        display: none;
-    }
+#btn-toogle{
+    display: none;
 }
+
+
+/* media queries */
+@media only screen and (max-width: 768px){
+
+    .container-menu div{
+        justify-content:space-between;
+        
+    }
+    .container-menu nav {
+        display: block;
+        background-color: #C4C4C4;
+        text-align: center;
+    }
+
+    .container-menu nav div ul{
+        width: 100%;
+        height: 90vh;
+        display: none;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .container-menu nav div ul li{
+        margin-top: 60px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    .container-menu nav div ul li:hover{
+        background-color: #54A2EA;
+    }
+
+    #btn-toogle{
+        margin: 5px;
+        display: block;
+        float: right;
+        border-radius: 8px;
+        border: 2px solid #C4C4C4;
+        background-color: #FFF;
+
+    }
+
+    
+}
+
+
+
+
 

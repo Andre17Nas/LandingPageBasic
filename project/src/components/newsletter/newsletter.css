@@ -1,7 +1,6 @@
 .container-newsletter{
     margin-top: 40px;
     display: flex;
-    height: 250px;
     flex-direction: column;
     background-color: #C4C4C4;
 }
@@ -49,4 +48,20 @@ form button{
     color: #fff;
     border: none;
     width: 60px;
+}
+
+@media only screen and (max-width: 768px){
+    .container-newsletter div h1{
+        font-size: 2rem;
+    }
+
+    .container-newsletter div p{
+        font-size: 1.5rem;
+        width: 90vw;
+    }
+
+    .container-newsletter form {
+        margin-bottom: 40px;
+        width: 100vw;
+    }
 }

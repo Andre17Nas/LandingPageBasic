@@ -7,7 +7,7 @@
 #section-contact{
     
     position:relative;
-    z-index: 100;
+    z-index: 90;
     transform: translateY(30px);
     background-color:#FFF;
     border-radius: 20px;
@@ -17,6 +17,7 @@
 }
 
 #section-contact > form{
+    
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -73,8 +74,9 @@ footer {
 }
 
 footer .social-links{
-    margin: 80px;
-    
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 tr {
@@ -87,7 +89,36 @@ footer p{
 }
 
 .social{
-     
-    margin: 0 30px;
+     margin: 0 30px;
     color: #585656;
+    cursor: pointer;
+}
+
+.social:hover{
+    
+    color: #54A2EA;
+}
+
+@media only screen and (max-width: 768px){
+    
+    .container-footer{
+        width: 100vw;
+    }
+
+    #section-contact{
+        width: 100vw;
+    }
+
+    #section-contact form{
+        width: 90vw;
+    }
+
+    #section-contact form > input{
+        width: 80vw;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 0.7rem;
+    }
 }

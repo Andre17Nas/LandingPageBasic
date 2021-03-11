@@ -44,10 +44,37 @@
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
+    font-style: italic;
 }
 
 #item-quote{
     color: #bbbb;
     text-align: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 768px){
+
+    .container-reviews{
+        border-top: 1px solid #c4c4c4;
+        width: 100vw;
+    }
+
+    .container-reviews .title h1{
+        font-size: 2rem;
+    }
+    .container-reviews .title p{
+        font-size: 1.5rem;
+        width: 90vw;
+
+    }
+    .container-reviews div{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .container-reviews div .desc-reviews{
+        font-size: 1.2rem;
+    }
 }

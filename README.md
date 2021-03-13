@@ -17,7 +17,7 @@ https://andrenas-landingpage.netlify.app/
 
 **3 - Haverá uma mensagem de erro por não possuir as dependencias utilizadas no projeto:**
 
-***obs: Estas foram as dependencias que utilizei:***
+***obs: Estas foram as dependencias que utilizei:*** <br>
   react-icons -> para os icones das redes sociais<br>
   react-router-dom -> para o arquivo de routes do projeto<br>
   react-scroll -> para o scroll do menu<br>
